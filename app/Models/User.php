@@ -11,7 +11,7 @@
         protected $table = 'tbl_user_site2';
         // column sa table
         protected $fillable = [
-            'username', 'password', 'gender'
+            'username', 'password', 'gender','jobid'
         ];
 
         public $timestamps = false;

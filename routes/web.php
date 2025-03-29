@@ -31,3 +31,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
  $router->put('/users/{id}', 'UserController@update'); // update user record
  $router->patch('/users/{id}', 'UserController@update'); // update user record
  $router->delete('/users/{id}', 'UserController@delete'); // delete record
+
+ // UserJob Routes
+ $router->get('/userjobs', 'UserJobController@index'); // Get all user jobs
+ $router->get('/userjobs/{id}', 'UserJobController@show'); // Get user job by ID
