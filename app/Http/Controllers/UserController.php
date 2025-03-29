@@ -20,7 +20,7 @@ class UserController extends Controller {
     public function getUsers(){
         // Using DB facade to fetch users from the database
         $users = DB::connection('mysql')
-            ->select("SELECT * FROM tbl_user");
+            ->select("SELECT * FROM tbl_user_site2");
 
         return $this->successResponse($users); 
     }

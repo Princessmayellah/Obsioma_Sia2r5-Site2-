@@ -8,7 +8,7 @@
 
     class User extends Model{
 
-        protected $table = 'tbl_user';
+        protected $table = 'tbl_user_site2';
         // column sa table
         protected $fillable = [
             'username', 'password', 'gender'
